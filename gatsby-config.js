@@ -8,16 +8,17 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/mccallumdev",
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `A static blog in a dynamic world`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Liam McCallum`,
+      summary: `who lives and works in sunny Australia.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A blog demonstrating what Liam works to understand.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `mailman_liam`,
     },
   },
   plugins: [
@@ -102,7 +103,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "McCallumDev RSS Feed",
           },
         ],
       },
@@ -110,15 +111,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
+        name: `McCallumDev Blog`,
+        short_name: `McCallumDev`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
   ],
